@@ -16,3 +16,13 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+## BatSyS (ver 1.1)
+
+É um mini sistema gerenciador de Ordens de Serviço com funcionalidadees simples de inclusao, exclusão, edição e visualização de O.S.
+
+> O projeto ainda se encontra num estado inicial de desenvolvimento, portanto poucas funcionalidades estão disponíveis. Nesse momento o foco foi desenvolver o core de funcionamento do programa com uma estrutura de dados básica e classes principais.
+
+## Visão geral da interface no terminal
+
+![Alt text](relative/path/to/visaoGeral.png?raw=true "visão geral")
