@@ -1,20 +1,43 @@
-public class Pessoa {
-    protected String nome;
-    protected int idade;
-    protected String cidadeNascimento;
+import java.time.LocalDate;
 
-    public Pessoa(String nome, int idade, String cidadeNascimento){
+public class Pessoa {
+    
+    protected String nome;
+    protected int anoNascimento;
+    protected String cpf;
+
+    public Pessoa(String nome, int ano, String cpf){
         this.nome = nome;
-        this.idade = idade;
-        this.cidadeNascimento = cidadeNascimento;
+        this.anoNascimento = ano;
+        this.cpf = cpf;
     }
 
     public Pessoa(String nome){
-        this.nome = nome;
-        idade = 0;
-        cidadeNascimento = "";
+        this.nome = nome;     
     }
 
     public Pessoa(){
+    }
+
+    // Getters and Setters
+    public String getNome(){
+        return nome;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public int getAnoNascimento(){
+        return anoNascimento;
+    }
+    public void setAnoNascimento(int ano){
+        this.anoNascimento = ano;
+    }
+
+    public String getCpf(){
+        return cpf;
+    }
+    public void setCpf(String cpf){
+        this.cpf = cpf;
     }
 }
