@@ -6,20 +6,16 @@ import enums.*;
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Cadastros {
 
-    static Scanner input = new Scanner(System.in);
-    static int c_clientes = 1;
-    static Integer c_os = 1;
+    static Scanner input = new Scanner(System.in);  
     /**
      * Método que cadastra um novo cliente em um array
-     * @param c_clientes
      * @param clientes
      */
 
-    public static void cadastraCliente(ArrayList<Cliente> clientes){
+    public static void cadastraCliente(int c_clientes, ArrayList<Cliente> clientes){
         Cliente aux = new Cliente(c_clientes);
         System.out.print(" > Nome do cliente: ");
         aux.setNome(input.nextLine());
@@ -27,31 +23,22 @@ public class Cadastros {
         aux.setEndereco(input.nextLine());
         System.out.print(" > Ano de nascimento: ");
         aux.setAnoNascimento(input.nextInt());
+        input.nextLine();
         System.out.print(" > CPF: ");
-        aux.setCpf(input.next());
+        aux.setCpf(input.nextLine());
         clientes.add(aux);
     }
     
     /**
      * Método para cadrastrar uma nova O.S em um HashMap
-     * @param c_os
      * @param clientes
      */
     
-    public static void cadastraOS(ArrayList<Cliente> clientes, HashMap<Integer,Os> ordensDeServico){
+    public static void cadastraOS(Integer c_os, ArrayList<Cliente> clientes, HashMap<Integer,Os> ordensDeServico){
         System.out.println(" ----------------------------------------");
         System.out.println("        CADASTRO DE ORDEM DE SERVICO ");
         System.out.println(" ----------------------------------------");
 
-        /**
-         * Verificar se array possui algum elemento.
-         */
-        if (clientes.isEmpty() == true){
-            System.out.println(" Nao foi encontrado cadastro de nenhum cliente!!");
-            System.out.println(" Por favor cadastre um novo registro.\n");
-            System.out.println("----------------------------------------");
-            cadastraCliente(clientes);
-        }
         /**
          * Lista todos os clientes dentro do array
          */

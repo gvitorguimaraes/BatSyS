@@ -63,7 +63,7 @@ public class Os{
     public StatusOS getStatus(){
         return status;
     }
-    public void setStatus(StatusOS staus){
+    public void setStatus(StatusOS status){
         this.status = status;
     }
 
