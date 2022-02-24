@@ -13,7 +13,8 @@ Visão geral do menu principal de opções:
 
 ## :hammer: Funcionalidades
 
-- `Cadastrar nova O.S`: 
+- `Cadastrar nova O.S`
+
 Permite cadastrar um nova ordem de serviço:
 
 ![Screenshot](/README/cadCliente.png)
@@ -22,18 +23,21 @@ Caso nenhum cliente tenha sido cadastrado a seguinte mensagem é exibida:
 
 ![Screenshot](/README/100clientes.png)
 
-- `Consultar O.S`: 
+- `Consultar O.S`
+
 Lista as ordens de serviço cadastradas e ao selecionar uma é exibido as informações detalhadas:
 
 ![Screenshot](/README/consultaOS.png)
 
-- `Cadastrar novo cliente`:
+- `Cadastrar novo cliente`
+
 Permite cadastrar um novo cliente:
 
 ![Screenshot](/README/cadCliente.png)
 
-- `Consultar clientes`: 
+- `Consultar clientes`
+
 Lista os clientes cadastrados:
 
-![Screenshot](/README/listaClientes.png)
+![Screenshot](/README/consultaCliente.png)
 
